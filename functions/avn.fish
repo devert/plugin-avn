@@ -1,7 +1,7 @@
-function avn --description "AVN function for the fish shell"
-    if test -n (git rev-parse --show-cdup)
-        set --global GIT_ROOT (git rev-parse --show-cdup)
-    else
-        set --global GIT_ROOT "."
-    end
+function avn --description "Automatic Version Switcher for Node"
+  if not which avn >/dev/null
+    echo "Please install 'avn' first!"
+  else
+    eval (avn alias -s)
+  end
 end

@@ -1,7 +1,7 @@
 <img src="https://cdn.rawgit.com/oh-my-fish/oh-my-fish/e4f1c2e0219a17e2c748b824004c8d0b38055c16/docs/logo.svg" align="left" width="144px" height="144px"/>
 
 #### Automatic Version Switching for Node
-> A plugin to integrate [Automatic Version Switching for Node](https://github.com/wbyoung/avn) for [Oh My Fish][omf-link].
+> A plugin to integrate [Automatic Version Switching for Node](https://github.com/wbyoung/avn) for [Oh My Fish][omf].
 
 [![MIT License](https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square)](/LICENSE)
 [![Fish Shell Version](https://img.shields.io/badge/fish-v2.2.0-007EC7.svg?style=flat-square)](https://fishshell.com)
@@ -17,14 +17,14 @@ via the commandline.
 ```fish
 $ npm install -g avn avn-nvm
 $ avn setup
-$ omf install avn
+$ omf install avn nvm
 ```
 
-NOTE: `avn` supports the following version managers:
+**NOTE:** Commands above are for usage with [NVM](). `avn` supports the following version managers:
 
-* `nvm` via `avn-nvm`
-* `n` via `avn-n`
-* `nodebrew` via `avn-nodebrew`
+- [`nvm`][nvm] via [`avn-nvm`][avn-nvm]
+- [`n`][n] via [`avn-n`][avn-n]
+- [`nodebrew`][nodebrew] via [`avn-nodebrew`][avn-nodebrew]
 
 ## Usage
 
@@ -39,6 +39,13 @@ Now when you `cd` into a directory with a `.node-version` file, `avn` will autom
 [mit]:            https://opensource.org/licenses/MIT
 [author]:         https://github.com/devert
 [contributors]:   https://github.com/devert/plugin-avn/graphs/contributors
-[omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
+[omf]:            https://www.github.com/oh-my-fish/oh-my-fish
+[nvm]:            https://github.com/creationix/nvm
+[n]:              https://github.com/visionmedia/n
+[nodebrew]:       https://github.com/hokaccha/nodebrew
+[avn-nvm]:        https://github.com/wbyoung/avn-nvm
+[avn-n]:          https://github.com/wbyoung/avn-n
+[avn-nodebrew]:   https://github.com/kuy/avn-nodebrew
+[semver]:         http://semver.org/
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
